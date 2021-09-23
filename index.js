@@ -11,7 +11,7 @@ const logger = require("./utils/log");
 /////////////////////////////////////////////
 
 const nodeVersion = semver.parse(process.version);
-if (nodeVersion.major < 13) {
+if (nodeVersion.major < 12) {
     logger(`Your Node.js ${process.version} is not supported, it required Node.js 13 to run bot!`, "error");
     return process.exit(0);
 };
